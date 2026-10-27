@@ -16,7 +16,7 @@ public class Triangle01 {
             System.out.println();
             i++;
         }
-        i = n - 1;
+        i = (n+1)- 1;
         while (i >= 1) {
             int k = 0;
             while (k < i) {
