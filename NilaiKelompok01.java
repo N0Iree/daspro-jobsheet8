@@ -15,7 +15,7 @@ public class NilaiKelompok01 {
             int kelompokTerbaik = 0;
             while (nomorKelompok <= jumlahKelompok) {
                 System.out.println("Kelompok " + nomorKelompok);
-                double totalNilai = 0;
+                int totalNilai = 0;
                 for (int j = 1; j <= jumlahPenlinai; j++) {
                     int nilai;
                     do{
