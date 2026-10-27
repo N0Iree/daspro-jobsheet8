@@ -4,7 +4,7 @@ public class Tugas101 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Masukkan nilai n = ");
         int n = sc.nextInt();
-        if (n < 1) {
+        if (n <= 1) {
             System.out.println("n harus minimal 1.");
         } else {
             int total = 0;
