@@ -10,6 +10,7 @@ public class Tugas301 {
         int totalSemua = 0;
         int barangTerbanyak = -1;
         int tokoTerbanyak = 0;
+        String ringkasan = "";
         for (int t = 1; t <= jumlahToko; t++) {
             System.out.println("Toko " + t);
                 int jumlahPelanggan;
@@ -32,14 +33,16 @@ public class Tugas301 {
                     } while (barang < 0);
                     totalBarangToko += barang;
                 }
-                System.out.println("Toko " + t + " - pelanggan: " + jumlahPelanggan
-                        + ", total barang: " + totalBarangToko);
+                ringkasan += "Toko " + t + " - pelanggan: " + jumlahPelanggan
+                        + ", total barang: " + totalBarangToko + "\n";
                 totalSemua += totalBarangToko;
                 if (totalBarangToko > barangTerbanyak) {
                     barangTerbanyak = totalBarangToko;
                     tokoTerbanyak = t;
                 }
             }
+            System.out.println();
+            System.out.print(ringkasan);
             System.out.println("Total barang seluruh toko: " + totalSemua);
             System.out.println("Toko dengan barang terbanyak: " + tokoTerbanyak);
         }
