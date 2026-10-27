@@ -7,6 +7,7 @@ public class Triangle01 {
 
         int i = 1;
         while (i <= n) {
+
             int j = 0;
             while (j < i) {
                 System.out.print("*");
@@ -15,6 +16,17 @@ public class Triangle01 {
             System.out.println();
             i++;
         }
+        i = n - 1;
+        while (i >= 1) {
+            int k = 0;
+            while (k < i) {
+                System.out.print("*");
+                k++;
+            }
+            System.out.println();
+            i--;
+        }
+
         sc.close();
     }
 }
